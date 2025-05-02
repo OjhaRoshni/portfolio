@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:rgb(20, 25, 48);
+            font-family:'Arial', sans-serif;
+            color:rgb(222, 222, 222);
+            
+           
+        }
+        h2{
+            color:rgb(90, 227, 27);   
+        }
+        .heading{
+            color:rgb(90, 227, 27);
+            margin-top:1rem;
+            display: flex;  
+            flex-direction: row;
+            justify-content : space-between;
+        }
+        .btn1{
+            padding:10px;
+            border:2px solid rgb(15, 174, 248);
+            background-color: transparent;
+            color: rgb(224, 237, 243);
+           
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(224, 237, 243);
+        }
+    .about{
+        text-align: center; 
+        text-decoration: underline;
+        text-decoration-color:rgb(15, 174, 248);
+        text-underline-offset: 1em;
+        text-decoration-thickness: 0.1rem;
+
+    }
+    .aboutme{
+        display:flex;
+        align-items: center;
+        gap:10rem;
+        padding: 2rem;
+
+        
+        
+    } 
+    img{
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    .text{
+        display: flex;
+        flex-direction:column;
+        
+    }
+    @media (max-width: 768px) {
+        .aboutme {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .aboutme img {
+            width: 88%;
+            height: 199px;  
+            max-width: 300px;
+            margin-top: -1.9rem;
+
+        }
+        .aboutme .text {
+            
+            text-align: left;
+            margin-top: -8rem;
+        }
+      
+    }
+    .language{
+       
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        margin: 0 auto;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        border: 2px solid rgb(15, 174, 248);
+     
+    }
+    
+    .languageimg{
+       display:inline-block;
+         text-align: center;
+        padding: 2rem;
+
+    }
+    
+    @media (max-width: 768px) {
+        .languageimg{
+            width:45% ;
+          }
+  
+        
+    }
+    .nextpart{
+        margin-top: 5rem;
+    }
+    .Education{
+        display: flex;
+        gap: 2rem; 
+        justify-content: center;
+        align-items: stretch; 
+        margin-top: 30px;
+       
+    }
+    .info{
+  background-color: #112240;
+  padding: 20px;
+  gap:10px;
+  border-radius: 10px;
+  width: 390px; 
+  box-shadow: 0px 4px 20px rgba(100, 255, 219, 0.03);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+ 
+    }
+    .info:hover {
+        transform: translateY(-5px);
+        
+    }
+    .info h5{
+ margin: 10px 0;
+ color: #ffffff;
+  
+    }
+    @media (max-width: 768px) {
+        .Education {
+            flex-direction: column;
+            align-items: center; 
+        }
+    
+        .info {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+        
+    }
+    .info img{
+      border-radius: 10px;
+      height:205px;
+      width:352px;
+      
+    }
+    .tname{
+        
+        font-size: 1.5rem;
+    }
+    .about{
+        margin-top:5rem;
+    }
+    @media (max-width: 768px) {
+        .Education {
+            flex-direction: column;
+            align-items: center; 
+        }
+    
+        .info {
+            width: 100%;
+            margin-bottom: 20px; 
+        }
+    }
+    span{
+        color: rgb(15, 248, 69);
+        font-weight: bold;
+    }
+    .messag{
+        display:flex;
+        align-items: center;
+        gap:35rem;
+        padding: 2rem;
+       
+    }
+  @media (max-width: 768px) {
+        .messag {
+            flex-direction: column;
+            
+        }
+    
+        .messag img {
+           
+            height: 257px;  
+            max-width:288px;
+            margin-top: -29.9rem;
+
+        }
+       
+    }
+    h6{
+        text-align: center;
+       
+        color: rgb(15, 174, 248);
+    }
+
+ 
+            
+    </style>
+
+  </head>
+
+  <body>
+    {% load static %}
+  <div class="container">
+    <h2 class="heading">
+        <span><a href="https://www.linkedin.com/in/roshni-ojha-5836a830a/"><i class="fa-brands fa-linkedin"></i></a></span>
+        <span><a href="#"> <i class="fa-brands fa-github"></i></a></span>
+        <span><a href="https://mail.google.com/"><i class="fa-solid fa-envelope"></i></a></span>
+    </h2><br><br><br><br><br>  
+    <p>Hi, I am</p><br>
+    <h2>Roshni Ojha</h2><br>
+    <h1>Software Developer</h1><br>
+    <h5>I am a Software developer and open-source enthusiast with a passion for building dynamic and scalable web applications. I thrive on tackling challenging problems and contributing to innovative projects that push the boundaries of technology. My dedication to continuous learning and collaboration drives me to explore emerging trends and make meaningful contributions to the open-source community.</h5>
+    <br>
+    <button class="btn1"><a href="#">Contact Me </a></button><br><br><br><br><br><br><br>
+    <h2 class="about">About Me</h2><br><br><br>
+     <div class="aboutme">
+        <img src="{% static 'images/2nd img.jpg' %}">
+        <div class="text">
+        <h5>Hello, I'm Roshni, a passionate software developer with a deep love for crafting innovative solutions and solving complex problems. My journey in technology is fueled by curiosity and the excitement of building impactful applications that make a difference.</h5>
+       <br><br> <h5>I always look forward to work upon new technology to solve the real world problems. Besides coding i am a content creator on youtube</h5>
+      
+     </div>
+    </div>
+    <br><br>
+    <h4>Here are some technologies I have worked with:</h4><br><br>
+    {% for i in language_img %}
+    <div class="languageimg">
+        <img src="{{i.image.url}}" class="language"> 
+        <h5>{{i.name}}</h5>
+    </div>
+    {% endfor %}
+     
+    <h4 class="nextpart">Currently Working on:</h4><br>
+    {% for i in current_lang_img %}
+    <div class="languageimg">
+        <img src="{{i.image.url}}" class="language"> 
+        <h5>{{i.name}}</h5>
+    </div>
+    {% endfor %}
+
+<br><br><br><br><br><br><br>
+ <h2 class="about">Education</h2><br><br><br>
+<div class="Education">
+    {% for i in educations_quali%}
+    <div class="info">
+    <h5>{{i.Year}}</h5>
+    <h5>{{i.name}}</h5>
+    <h5>{{i.description}}</h5><br><br>
+    </div>
+    {% endfor %}
+</div>
+<h2 class="about">Projects</h2><br><br><br>
+<div class="Education">
+    {% for i in project%}
+    <div class="info">
+    <img src="{{i.image.url}}" class="projectimg"><br><br>
+    <h2 class="tname">{{i.project_name}}</h2>
+    <h5>{{i.project_description}}</h5><br>
+    <h5>{{i.language_used}}</h5><br>
+    <h5>{{i.project_link}}</h5>
+    </div>
+    {% endfor %}
+</div>
+<br><br>
+<h2 class="about">Contact</h2><br><br><br>
+<div class="messag">
+<h5> <br> <span>Name </span> : Roshni.K Ojha <br><br> <span>Email</span> : roshniojha6767@gmail.com<br> <br> <span>Country </span> : India<br> <br> <span>Gender</span> : Female <br></h5>
+<img src="{% static 'images/mail.jpeg' %}">
+</div>
+<hr>
+<h6>Design and Develop by Roshni Ojha.All rights reserved. </h6>
+
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  </body>
+</html>
